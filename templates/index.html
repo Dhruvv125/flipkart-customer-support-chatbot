@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flipkart Customer Support</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+
+        <div class="chat-header">
+
+            <div class="header-left">
+
+                <div>
+                    <div class="logo">🛒 Flipkart Customer Support</div>
+                    <span class="status">Online</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Chat Messages -->
+
+        <div class="chat-box" id="chat-box">
+
+            <div class="bot-message">
+
+                <strong>Bot</strong>
+
+                <p>Hello 👋</p>
+
+                <p>Welcome to Flipkart Customer Support.</p>
+
+                <p>How can I help you today?</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Input Area -->
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message..."
+                autocomplete="off">
+
+            <button id="send-btn" aria-label="Send message">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript File -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
